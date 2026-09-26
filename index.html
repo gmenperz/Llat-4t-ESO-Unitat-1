@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Via Latina — Unitat 1: jocs de llatí</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    box-sizing: border-box;
+    --bg: #E6DEC9; --bg-panel: #F4EEDF; --bg-panel-2: #EDE4CE;
+    --ink: #2B2118; --ink-soft: #5A4B3B;
+    --red: #8C2F27; --red-dark: #6E211B;
+    --bronze: #A9781F; --patina: #4E6E58;
+    --line: rgba(43,33,24,0.22); --line-soft: rgba(43,33,24,0.12); --shadow: rgba(43,33,24,0.28);
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1C1712; --bg-panel: #29221A; --bg-panel-2: #322A20;
+      --ink: #EFE7D6; --ink-soft: #C7B99E;
+      --red: #D06B5C; --red-dark: #B5493A; --bronze: #D8AC4E; --patina: #8CB49A;
+      --line: rgba(239,231,214,0.22); --line-soft: rgba(239,231,214,0.12); --shadow: rgba(0,0,0,0.55);
+    }
+  }
+  html, body { height: 100%; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg);
+    background-image: radial-gradient(circle at 15% 20%, rgba(43,33,24,0.05) 0%, transparent 45%),
+                       radial-gradient(circle at 85% 75%, rgba(43,33,24,0.05) 0%, transparent 45%);
+    color: var(--ink); font-family: 'Crimson Pro', Georgia, serif; font-size: 18px; line-height: 1.5;
+    min-height: 100%; display: flex; justify-content: center; padding: 40px 16px;
+  }
+  .display { font-family: 'Cinzel', Georgia, serif; letter-spacing: 0.04em; }
+  .wrap { width: 100%; max-width: 640px; text-align: center; }
+  h1 { font-size: clamp(28px, 7vw, 42px); margin: 0 0 6px; font-weight: 600; }
+  .rule { width: 120px; height: 3px; margin: 12px auto 16px; background: linear-gradient(90deg, transparent, var(--bronze), transparent); }
+  p.sub { color: var(--ink-soft); font-style: italic; margin: 0 0 32px; }
+
+  .game-list { display: flex; flex-direction: column; gap: 14px; }
+  a.game-card {
+    display: block; text-align: left; text-decoration: none; color: var(--ink);
+    background: var(--bg-panel); border: 1px solid var(--line); border-radius: 12px;
+    padding: 18px 20px; box-shadow: 0 8px 18px -12px var(--shadow); transition: border-color .15s, transform .15s;
+  }
+  a.game-card:hover { border-color: var(--bronze); transform: translateY(-2px); }
+  a.game-card h2 { font-family: 'Cinzel', serif; font-size: 18px; margin: 0 0 6px; color: var(--red); }
+  a.game-card p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+
+  footer { margin-top: 32px; color: var(--ink-soft); font-size: 13px; font-style: italic; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="sub" style="margin-bottom:4px; text-transform:uppercase; letter-spacing:0.08em; font-size:13px; font-style:normal;">Unitat 1</p>
+  <h1 class="display">VIA LATINA</h1>
+  <div class="rule"></div>
+  <p class="sub">primera declinació i present d'indicatiu — jocs de pràctica</p>
+
+  <div class="game-list">
+    <a class="game-card" href="via-latina.html">
+      <h2>Via Latina</h2>
+      <p>Preguntes ràpides de declinació, conjugació i vocabulari, amb punts, ratxa i vides.</p>
+    </a>
+    <a class="game-card" href="memoria-latina.html">
+      <h2>Memoria Latina</h2>
+      <p>Joc de parelles: relaciona cada mot llatí amb el seu significat en català.</p>
+    </a>
+    <a class="game-card" href="tabula-completa.html">
+      <h2>Tabula Completa</h2>
+      <p>Omple d'un cop tot el paradigma d'un nom o d'un verb en present d'indicatiu.</p>
+    </a>
+    <a class="game-card" href="origo-verborum.html">
+      <h2>Origo Verborum</h2>
+      <p>Substrat, superstrat, adstrat, mots patrimonials i cultismes — d'on venen els mots del català.</p>
+    </a>
+  </div>
+
+  <footer>Salve, discipule — que la fortuna t'acompanyi en el teu llatí.</footer>
+</div>
+</body>
+</html>
